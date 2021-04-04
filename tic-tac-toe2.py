@@ -36,19 +36,19 @@ def btnClick(buttons):
         bclick = False
         playerb = p2.get() + ' Wins!'
         pa = p1.get() + ' Wins!'
-        cheackForWin()
+        checkForWin()
         flag += 1
     
 
     elif buttons['text'] == ' ' and bclick == False:
         buttons['text'] = 'O'
         bclick = True
-        cheackForWin()
+        checkForWin()
         flag += 1
     else:
         tkinter.messagebox.showinfo('Tic-Tac-Toe', 'Button already Clicked!')
 
-def cheackForWin():
+def checkForWin():
     if (button1['text'] == 'X' and button2['text'] == 'X' and button3['text'] == 'X' or 
         button4['text'] == 'X' and button5['text'] == 'X' and button6['text'] == 'X' or
         button7['text'] == 'X' and button8['text'] == 'X' and button9['text'] == 'X' or
